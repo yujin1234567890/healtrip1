@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>힐트립 - 시니어 맞춤 여행</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-circle">
+                        <span>H</span>
+                    </div>
+                    <h1>힐트립</h1>
+                </div>
+                
+                <nav class="desktop-nav">
+                    <a href="#features">특징</a>
+                    <a href="#packages">여행 패키지</a>
+                    <a href="#testimonials">고객 후기</a>
+                    <a href="#contact">문의하기</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="tel:1588-0000" class="phone-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>1588-0000</span>
+                    </a>
+                    <button class="btn btn-primary desktop-btn">상담 신청</button>
+                    <button class="menu-toggle" onclick="toggleMenu()">
+                        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="mobile-menu">
+                <nav>
+                    <a href="#features" onclick="closeMenu()">특징</a>
+                    <a href="#packages" onclick="closeMenu()">여행 패키지</a>
+                    <a href="#testimonials" onclick="closeMenu()">고객 후기</a>
+                    <a href="#contact" onclick="closeMenu()">문의하기</a>
+                    <a href="tel:1588-0000" class="menu-phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>1588-0000</span>
+                    </a>
+                    <button class="btn btn-primary">상담 신청</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">시니어 맞춤 여행</div>
+                    <h1 class="hero-title">
+                        건강하고 행복한<br>
+                        <span class="text-emerald">힐링 여행</span>
+                    </h1>
+                    <p class="hero-description">
+                        시니어 여러분의 건강과 안전을 최우선으로 생각하는<br class="desktop-br">
+                        프리미엄 맞춤 여행 서비스입니다
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">여행 상품 보기</button>
+                        <button class="btn btn-outline">무료 상담 받기</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">1,200+</div>
+                            <div class="stat-label">만족 고객</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">여행 상품</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">만족도</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1764816633859-136c97741472?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZW5pb3IlMjBjb3VwbGUlMjB0cmF2ZWx8ZW58MXx8fHwxNzY1NzE1MzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="시니어 여행">
+                    </div>
+                    <div class="hero-badge">
+                        <div class="badge-icon">✨</div>
+                        <div>
+                            <div class="badge-title">안전한 여행</div>
+                            <div class="badge-subtitle">24시간 케어 서비스</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>왜 <span class="text-emerald">힐트립</span>일까요?</h2>
+                <p>시니어 여행 전문가가 설계한 안전하고 편안한 여행 서비스</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon bg-rose">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3>건강 맞춤 일정</h3>
+                    <p>무리하지 않는 여유로운 일정으로 편안한 여행을 즐기세요</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>안전 보장</h3>
+                    <p>여행자 보험과 24시간 긴급 지원 서비스를 제공합니다</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon bg-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>소규모 그룹</h3>
+                    <p>10-15명의 소규모 그룹으로 편안하고 친밀한 여행</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon bg-emerald">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 13h14M5 17h14M5 21h14M12 3v3m-9 6h18"></path>
+                        </svg>
+                    </div>
+                    <h3>의료 서비스</h3>
+                    <p>전문 간호사가 동행하여 건강 상태를 체크합니다</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon bg-amber">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
+                    </div>
+                    <h3>편안한 숙소</h3>
+                    <p>접근성이 좋은 프리미엄 호텔과 리조트를 선별합니다</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon bg-cyan">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>여유로운 시간</h3>
+                    <p>충분한 휴식 시간과 자유 시간을 보장합니다</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>인기 여행 패키지</h2>
+                <p>시니어 여러분을 위해 특별히 준비한 맞춤 여행 상품</p>
+            </div>
+            
+            <div class="packages-grid" id="packagesGrid"></div>
+            
+            <div class="text-center">
+                <button class="btn btn-outline-large">모든 여행 상품 보기</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>고객 후기</h2>
+                <p>힐트립과 함께한 시니어 여행자들의 생생한 이야기</p>
+            </div>
+            
+            <div class="testimonials-grid" id="testimonialsGrid"></div>
+            
+            <div class="cta-box">
+                <h3>지금 바로 힐트립과 함께하세요!</h3>
+                <p>건강하고 행복한 여행의 첫 걸음을 시작하세요</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-white">무료 상담 신청</button>
+                    <button class="btn btn-outline-white">카탈로그 다운로드</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>문의하기</h2>
+                    <p class="contact-description">
+                        궁금한 점이 있으시면 언제든지 연락주세요.<br>
+                        친절하게 상담해드리겠습니다.
+                    </p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">전화 상담</div>
+                                <div class="contact-value">1588-0000</div>
+                                <div class="contact-note">통화료 무료</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">이메일</div>
+                                <div class="contact-value">info@healtrip.co.kr</div>
+                                <div class="contact-note">24시간 이내 답변</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">상담 시간</div>
+                                <div class="contact-value-text">평일 09:00 - 18:00</div>
+                                <div class="contact-note">주말 및 공휴일 휴무</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">방문 상담</div>
+                                <div class="contact-value-text">서울시 강남구 테헤란로 123</div>
+                                <div class="contact-note">힐트립 빌딩 5층 (예약 필수)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>상담 신청</h3>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label>이름</label>
+                            <input type="text" placeholder="이름을 입력하세요" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>연락처</label>
+                            <input type="tel" placeholder="010-0000-0000" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>이메일</label>
+                            <input type="email" placeholder="example@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>관심 여행지</label>
+                            <select required>
+                                <option value="">선택해주세요</option>
+                                <option value="jeju">제주도</option>
+                                <option value="gangwon">강원도</option>
+                                <option value="gyeongju">경주</option>
+                                <option value="busan">부산</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>문의 내용</label>
+                            <textarea rows="4" placeholder="문의하실 내용을 입력해주세요" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">상담 신청하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-circle">
+                            <span>H</span>
+                        </div>
+                        <h3>힐트립</h3>
+                    </div>
+                    <p class="footer-description">
+                        시니어 여러분의<br>
+                        건강하고 행복한 여행을<br>
+                        함께합니다
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Youtube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>여행 상품</h4>
+                    <ul>
+                        <li><a href="#">제주도 여행</a></li>
+                        <li><a href="#">강원도 여행</a></li>
+                        <li><a href="#">경주 여행</a></li>
+                        <li><a href="#">부산 여행</a></li>
+                        <li><a href="#">전체 상품</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>회사 소개</h4>
+                    <ul>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">채용 정보</a></li>
+                        <li><a href="#">제휴 문의</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>고객 지원</h4>
+                    <ul>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">여행 가이드</a></li>
+                        <li><a href="#">예약 안내</a></li>
+                        <li><a href="#">환불 규정</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>(주)힐트립 | 대표이사: 홍길동 | 사업자등록번호: 123-45-67890 | 관광사업자등록번호: 제2024-000001호</p>
+                <p>서울시 강남구 테헤란로 123 힐트립 빌딩 5층 | 이메일: info@healtrip.co.kr | 전화: 1588-0000</p>
+                <p>© 2024 HealTrip. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
